@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name fp_archive)(type KiCad)(uri "$(KIPRJMOD)/kicad_lib/fp_archive.pretty")(options "")(descr ""))
+  (lib (name AS4C32M16MSA-6BIN)(type KiCad)(uri ${KIPRJMOD}/kicad_lib/AS4C32M16MSA-6BIN)(options "")(descr ""))
 )

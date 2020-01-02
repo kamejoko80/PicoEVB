@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name PicoEVB-cache)(type Legacy)(uri ${KIPRJMOD}/PicoEVB-cache.lib)(options "")(descr ""))
+  (lib (name AS4C32M16MSA-6BIN)(type Legacy)(uri ${KIPRJMOD}/kicad_lib/AS4C32M16MSA-6BIN/AS4C32M16MSA-6BIN.lib)(options "")(descr ""))
+)
