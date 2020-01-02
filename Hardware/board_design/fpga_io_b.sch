@@ -1,103 +1,7 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Zilog
-LIBS:zetex
-LIBS:Xicor
-LIBS:Worldsemi
-LIBS:wiznet
-LIBS:video
-LIBS:ttl_ieee
-LIBS:transf
-LIBS:switches
-LIBS:supertex
-LIBS:stm32
-LIBS:stm8
-LIBS:silabs
-LIBS:sensors
-LIBS:rfcom
-LIBS:relays
-LIBS:references
-LIBS:pspice
-LIBS:Power_Management
-LIBS:powerint
-LIBS:Oscillators
-LIBS:onsemi
-LIBS:nxp_armmcu
-LIBS:nordicsemi
-LIBS:msp430
-LIBS:motors
-LIBS:motor_drivers
-LIBS:microchip_pic32mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic10mcu
-LIBS:microchip_dspic33dsc
-LIBS:mechanical
-LIBS:maxim
-LIBS:logo
-LIBS:Lattice
-LIBS:ir
-LIBS:hc11
-LIBS:graphic
-LIBS:gennum
-LIBS:ftdi
-LIBS:ESD_Protection
-LIBS:elec-unifil
-LIBS:diode
-LIBS:dc-dc
-LIBS:cmos_ieee
-LIBS:brooktre
-LIBS:bosch
-LIBS:bbd
-LIBS:battery_management
-LIBS:analog_devices
-LIBS:Altera
-LIBS:allegro
-LIBS:actel
-LIBS:ac-dc
-LIBS:74xgxx
-LIBS:xc7a50t-bga325
-LIBS:MAX1589A
-LIBS:MIC47050
-LIBS:TS3L110
-LIBS:W25Q
-LIBS:93LC46B-SOT23
-LIBS:m2-board
-LIBS:ft2232-fixed
-LIBS:tps82084
-LIBS:PicoEVB-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
-$Descr A 11000 8500
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 4 7
 Title "PicoEVB"
@@ -110,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L xc7a50tcsg325 U1
+L PicoEVB-rescue:xc7a50tcsg325-xc7a50t-bga325 U1
 U 4 1 586A5920
 P 5300 2900
 F 0 "U1" H 5500 3150 60  0000 L CNN
@@ -121,7 +25,7 @@ F 3 "" H 5300 2900 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L xc7a50tcsg325 U1
+L PicoEVB-rescue:xc7a50tcsg325-xc7a50t-bga325 U1
 U 3 1 586A5977
 P 2550 1300
 F 0 "U1" H 2750 1550 60  0000 L CNN
@@ -132,7 +36,7 @@ F 3 "" H 2550 1300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xc7a50tcsg325 U1
+L PicoEVB-rescue:xc7a50tcsg325-xc7a50t-bga325 U1
 U 2 1 594F31E6
 P 8600 1300
 F 0 "U1" H 8800 1550 60  0000 L CNN
@@ -152,7 +56,7 @@ VCC_BANK15_B
 Text GLabel 5800 1400 0    60   Input ~ 0
 VCC_BANK14_B
 $Comp
-L GND #PWR023
+L power:GND #PWR023
 U 1 1 594F321A
 P 5650 1700
 F 0 "#PWR023" H 5650 1450 50  0001 C CNN
@@ -163,7 +67,7 @@ F 3 "" H 5650 1700 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C51
+L Device:C C51
 U 1 1 586D021A
 P 5950 1550
 F 0 "C51" H 5975 1650 50  0000 L CNN
@@ -293,7 +197,7 @@ NoConn ~ 5300 7500
 NoConn ~ 5300 7700
 NoConn ~ 5300 7800
 $Comp
-L W25Q U2
+L PicoEVB-rescue:W25Q-W25Q U2
 U 1 1 587CA7B7
 P 6750 1400
 F 0 "U2" H 6600 1500 50  0000 L CNN
@@ -309,7 +213,7 @@ Text GLabel 7000 2300 2    60   Input ~ 0
 FPGA_CCLK_0_B
 NoConn ~ 8600 4100
 $Comp
-L LED D4
+L Device:LED D4
 U 1 1 587E337E
 P 8150 6000
 F 0 "D4" H 8150 6100 50  0000 C CNN
@@ -322,7 +226,7 @@ F 5 "~" H 8150 6000 60  0001 C CNN "MFG"
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D3
+L Device:LED D3
 U 1 1 594F3235
 P 8150 5700
 F 0 "D3" H 8150 5800 50  0000 C CNN
@@ -335,7 +239,7 @@ F 5 "~" H 8150 5700 60  0001 C CNN "MFG"
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D2
+L Device:LED D2
 U 1 1 587E3396
 P 8150 5300
 F 0 "D2" H 8150 5400 50  0000 C CNN
@@ -370,9 +274,11 @@ FPGA I/O
 NoConn ~ 8600 4900
 NoConn ~ 8600 4800
 $Comp
-L CONN_01X06 P1
+L PicoEVB-rescue:CONN_01X06-PicoEVB-rescue P1
 U 1 1 59AB5657
 P 1350 4200
+AR Path="/59AB5657" Ref="P1"  Part="1" 
+AR Path="/594F323A/59AB5657" Ref="P1"  Part="1" 
 F 0 "P1" H 1350 4550 50  0000 C CNN
 F 1 "CONN_01X06" V 1450 4200 50  0000 C CNN
 F 2 "conn:pico-ezmate-6" H 1500 3850 50  0001 C CNN
@@ -383,7 +289,7 @@ F 5 "~" H 1350 4200 60  0001 C CNN "MFG"
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR024
+L power:GND #PWR024
 U 1 1 59AB565E
 P 1400 4000
 F 0 "#PWR024" H 1400 3750 50  0001 C CNN
@@ -404,21 +310,21 @@ M2_LED_1
 Text GLabel 5450 6000 2    60   Output ~ 0
 M2_LED_2
 Wire Wire Line
-	7250 6300 8600 6300
+	7250 6300 7400 6300
 Wire Wire Line
 	2400 6300 2550 6300
 Wire Wire Line
-	5800 1400 6450 1400
+	5800 1400 5950 1400
 Connection ~ 5950 1400
 Wire Wire Line
-	5650 1700 6450 1700
+	5650 1700 5950 1700
 Connection ~ 5950 1700
 Wire Wire Line
 	6150 2400 8600 2400
 Wire Wire Line
 	6300 2300 6300 1600
 Wire Wire Line
-	6450 1500 6150 1500
+	6450 1500 6350 1500
 Wire Wire Line
 	6150 1500 6150 2400
 Wire Wire Line
@@ -428,9 +334,9 @@ Wire Wire Line
 Wire Wire Line
 	8600 1500 7250 1500
 Wire Wire Line
-	8600 1600 7250 1600
+	8600 1600 8000 1600
 Wire Wire Line
-	8600 1700 7250 1700
+	8600 1700 8100 1700
 Wire Wire Line
 	8350 1800 8600 1800
 Wire Wire Line
@@ -487,7 +393,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 6100 5300 6100
 $Comp
-L R_Pack04 RN2
+L Device:R_Pack04 RN2
 U 1 1 59EAB957
 P 7600 5900
 F 0 "RN2" V 7300 5900 50  0000 C CNN
@@ -511,7 +417,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 5300 8000 5300
 Wire Wire Line
-	7400 5700 7400 6300
+	7400 5700 7400 5800
 Connection ~ 7400 6300
 Connection ~ 7400 5800
 Connection ~ 7400 5900
@@ -521,7 +427,7 @@ BUSY_LED_PU
 Wire Wire Line
 	7800 6000 7800 6200
 $Comp
-L R_Pack04 RN3
+L Device:R_Pack04 RN3
 U 1 1 59EAF829
 P 7650 1100
 F 0 "RN3" V 7350 1100 50  0000 C CNN
@@ -537,7 +443,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 850  7450 850 
 Wire Wire Line
-	7450 850  7450 1200
+	7450 850  7450 900 
 Connection ~ 6200 1400
 Connection ~ 7450 900 
 Connection ~ 7450 1000
@@ -564,4 +470,32 @@ Wire Wire Line
 	8100 1000 8100 1700
 Connection ~ 8100 1700
 NoConn ~ 7850 900 
+Wire Wire Line
+	5950 1400 6200 1400
+Wire Wire Line
+	5950 1700 6400 1700
+Wire Wire Line
+	6400 1700 6450 1700
+Wire Wire Line
+	7400 6300 8600 6300
+Wire Wire Line
+	7400 5800 7400 5900
+Wire Wire Line
+	7400 5900 7400 6000
+Wire Wire Line
+	7400 6000 7400 6300
+Wire Wire Line
+	6200 1400 6450 1400
+Wire Wire Line
+	7450 900  7450 1000
+Wire Wire Line
+	7450 1000 7450 1100
+Wire Wire Line
+	7450 1100 7450 1200
+Wire Wire Line
+	6350 1500 6150 1500
+Wire Wire Line
+	8000 1600 7250 1600
+Wire Wire Line
+	8100 1700 7250 1700
 $EndSCHEMATC

@@ -1,101 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Zilog
-LIBS:zetex
-LIBS:Xicor
-LIBS:Worldsemi
-LIBS:wiznet
-LIBS:video
-LIBS:ttl_ieee
-LIBS:transf
-LIBS:switches
-LIBS:supertex
-LIBS:stm32
-LIBS:stm8
-LIBS:silabs
-LIBS:sensors
-LIBS:rfcom
-LIBS:relays
-LIBS:references
-LIBS:pspice
-LIBS:Power_Management
-LIBS:powerint
-LIBS:Oscillators
-LIBS:onsemi
-LIBS:nxp_armmcu
-LIBS:nordicsemi
-LIBS:msp430
-LIBS:motors
-LIBS:motor_drivers
-LIBS:microchip_pic32mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic10mcu
-LIBS:microchip_dspic33dsc
-LIBS:mechanical
-LIBS:maxim
-LIBS:logo
-LIBS:Lattice
-LIBS:ir
-LIBS:hc11
-LIBS:graphic
-LIBS:gennum
-LIBS:ftdi
-LIBS:ESD_Protection
-LIBS:elec-unifil
-LIBS:diode
-LIBS:dc-dc
-LIBS:cmos_ieee
-LIBS:brooktre
-LIBS:bosch
-LIBS:bbd
-LIBS:battery_management
-LIBS:analog_devices
-LIBS:Altera
-LIBS:allegro
-LIBS:actel
-LIBS:ac-dc
-LIBS:74xgxx
-LIBS:xc7a50t-bga325
-LIBS:MAX1589A
-LIBS:MIC47050
-LIBS:TS3L110
-LIBS:W25Q
-LIBS:93LC46B-SOT23
-LIBS:m2-board
-LIBS:ft2232-fixed
-LIBS:tps82084
-LIBS:PicoEVB-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -110,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TPS82084SIL U3
+L PicoEVB-rescue:TPS82084SIL-tps82084 U3
 U 1 1 5861CFAE
 P 1950 2150
 F 0 "U3" H 1550 1500 60  0000 C CNN
@@ -123,7 +27,7 @@ F 5 "TPS82085SILT" H 1950 2150 60  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR025
+L power:+3V3 #PWR025
 U 1 1 5861CFB4
 P 1150 1600
 F 0 "#PWR025" H 1150 1450 50  0001 C CNN
@@ -134,7 +38,7 @@ F 3 "" H 1150 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR026
+L power:GND #PWR026
 U 1 1 5861CFBA
 P 1150 2650
 F 0 "#PWR026" H 1150 2400 50  0001 C CNN
@@ -145,7 +49,7 @@ F 3 "" H 1150 2650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L Device:R R2
 U 1 1 5861CFC0
 P 2950 1950
 F 0 "R2" V 2850 1900 50  0000 C CNN
@@ -158,7 +62,7 @@ F 5 "~" H 2950 1950 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L Device:R R3
 U 1 1 5861CFC6
 P 2950 2350
 F 0 "R3" V 2850 2300 50  0000 C CNN
@@ -171,7 +75,7 @@ F 5 "~" H 2950 2350 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR027
+L power:GND #PWR027
 U 1 1 5861CFCC
 P 2950 2650
 F 0 "#PWR027" H 2950 2400 50  0001 C CNN
@@ -183,7 +87,7 @@ F 3 "" H 2950 2650 50  0000 C CNN
 $EndComp
 NoConn ~ 2650 2550
 $Comp
-L C C56
+L Device:C C56
 U 1 1 594F31D2
 P 3300 1900
 F 0 "C56" H 3150 2000 50  0000 L CNN
@@ -196,7 +100,7 @@ F 5 "~" H 3300 1900 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C52
+L Device:C C52
 U 1 1 5861CFEC
 P 850 1850
 F 0 "C52" H 875 1950 50  0000 L CNN
@@ -209,7 +113,7 @@ F 5 "~" H 850 1850 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR028
+L power:GND #PWR028
 U 1 1 5861CFF6
 P 850 2050
 F 0 "#PWR028" H 850 1800 50  0001 C CNN
@@ -220,7 +124,7 @@ F 3 "" H 850 2050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR029
+L power:GND #PWR029
 U 1 1 5861CFFC
 P 3300 2100
 F 0 "#PWR029" H 3300 1850 50  0001 C CNN
@@ -231,7 +135,7 @@ F 3 "" H 3300 2100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TPS82084SIL U6
+L PicoEVB-rescue:TPS82084SIL-tps82084 U6
 U 1 1 5861D9F9
 P 7100 4000
 F 0 "U6" H 6700 3350 60  0000 C CNN
@@ -244,7 +148,7 @@ F 5 "~" H 7100 4000 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR030
+L power:+3V3 #PWR030
 U 1 1 5861DA00
 P 6300 3450
 F 0 "#PWR030" H 6300 3300 50  0001 C CNN
@@ -255,7 +159,7 @@ F 3 "" H 6300 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR031
+L power:GND #PWR031
 U 1 1 594F31D8
 P 6300 4500
 F 0 "#PWR031" H 6300 4250 50  0001 C CNN
@@ -266,7 +170,7 @@ F 3 "" H 6300 4500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L Device:R R4
 U 1 1 594F31D9
 P 8100 3800
 F 0 "R4" V 8000 3750 50  0000 C CNN
@@ -279,7 +183,7 @@ F 5 "~" H 8100 3800 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L Device:R R5
 U 1 1 594F31DA
 P 8100 4200
 F 0 "R5" V 8000 4150 50  0000 C CNN
@@ -292,7 +196,7 @@ F 5 "~" H 8100 4200 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR032
+L power:GND #PWR032
 U 1 1 594F31DB
 P 8100 4500
 F 0 "#PWR032" H 8100 4250 50  0001 C CNN
@@ -304,7 +208,7 @@ F 3 "" H 8100 4500 50  0000 C CNN
 $EndComp
 NoConn ~ 7800 4400
 $Comp
-L C C58
+L Device:C C58
 U 1 1 594F31DC
 P 6000 3700
 F 0 "C58" H 6025 3800 50  0000 L CNN
@@ -317,7 +221,7 @@ F 5 "~" H 6000 3700 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR033
+L power:GND #PWR033
 U 1 1 594F31DD
 P 6000 3900
 F 0 "#PWR033" H 6000 3650 50  0001 C CNN
@@ -340,7 +244,7 @@ P1V0_VCC_FPGA_B
 Text GLabel 8600 1100 2    60   Output ~ 0
 P1V8_FPGA_VCCAUX_B
 $Comp
-L GND #PWR034
+L power:GND #PWR034
 U 1 1 594F31DE
 P 6850 1950
 F 0 "#PWR034" H 6850 1700 50  0001 C CNN
@@ -351,7 +255,7 @@ F 3 "" H 6850 1950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR035
+L power:+3V3 #PWR035
 U 1 1 5869FDE1
 P 6550 2550
 F 0 "#PWR035" H 6550 2400 50  0001 C CNN
@@ -370,7 +274,7 @@ Digital supplies
 Text Notes 5950 850  0    60   ~ 0
 FPGA supplies
 $Comp
-L MAX1589AETTxxxT U4
+L PicoEVB-rescue:MAX1589AETTxxxT-MAX1589A U4
 U 1 1 586DD822
 P 6900 1550
 F 0 "U4" H 7150 1650 60  0000 C CNN
@@ -385,7 +289,7 @@ $EndComp
 NoConn ~ 7850 1750
 NoConn ~ 7850 1650
 $Comp
-L C C60
+L Device:C C60
 U 1 1 586DE571
 P 8200 1700
 F 0 "C60" H 8225 1800 50  0000 L CNN
@@ -398,7 +302,7 @@ F 5 "~" H 8200 1700 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR036
+L power:GND #PWR036
 U 1 1 594F3221
 P 8200 1850
 F 0 "#PWR036" H 8200 1600 50  0001 C CNN
@@ -409,7 +313,7 @@ F 3 "" H 8200 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C61
+L Device:C C61
 U 1 1 586DE77B
 P 8200 2500
 F 0 "C61" H 8225 2600 50  0000 L CNN
@@ -422,7 +326,7 @@ F 5 "~" H 8200 2500 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR037
+L power:GND #PWR037
 U 1 1 594F3223
 P 8200 2650
 F 0 "#PWR037" H 8200 2400 50  0001 C CNN
@@ -433,7 +337,7 @@ F 3 "" H 8200 2650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C64
+L Device:C C64
 U 1 1 586DE91D
 P 8550 3800
 F 0 "C64" H 8400 3900 50  0000 L CNN
@@ -446,7 +350,7 @@ F 5 "~" H 8550 3800 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR038
+L power:GND #PWR038
 U 1 1 586DE923
 P 8550 4000
 F 0 "#PWR038" H 8550 3750 50  0001 C CNN
@@ -589,7 +493,7 @@ Wire Wire Line
 	8550 3650 8550 3600
 Connection ~ 8550 3600
 $Comp
-L MIC47050 U5
+L PicoEVB-rescue:MIC47050-MIC47050 U5
 U 1 1 594F321D
 P 6900 2350
 F 0 "U5" H 7150 2450 60  0000 C CNN
@@ -602,7 +506,7 @@ F 5 "~" H 6900 2350 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR039
+L power:GND #PWR039
 U 1 1 586DD696
 P 6900 2700
 F 0 "#PWR039" H 6900 2450 50  0001 C CNN
@@ -616,7 +520,7 @@ Wire Wire Line
 	6900 2650 6900 2700
 NoConn ~ 7850 2500
 $Comp
-L PWR_FLAG #FLG040
+L power:PWR_FLAG #FLG040
 U 1 1 5873F13B
 P 8350 1100
 F 0 "#FLG040" H 8350 1195 50  0001 C CNN
@@ -632,7 +536,7 @@ Connection ~ 3300 1750
 Wire Wire Line
 	3550 1750 3550 1550
 $Comp
-L Ferrite_Bead L1
+L Device:Ferrite_Bead L1
 U 1 1 594F3227
 P 7850 1100
 F 0 "L1" V 7700 1125 50  0000 C CNN
@@ -654,7 +558,7 @@ Connection ~ 6850 1850
 Wire Wire Line
 	2650 1750 3550 1750
 $Comp
-L C C59
+L Device:C C59
 U 1 1 586A0CBD
 P 6600 2750
 F 0 "C59" H 6650 2650 50  0000 L CNN
@@ -667,7 +571,7 @@ F 5 "~" H 6600 2750 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR041
+L power:GND #PWR041
 U 1 1 586A0EAD
 P 6600 2900
 F 0 "#PWR041" H 6600 2650 50  0001 C CNN
@@ -678,7 +582,7 @@ F 3 "" H 6600 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR042
+L power:+3V3 #PWR042
 U 1 1 594F3249
 P 1250 3350
 F 0 "#PWR042" H 1250 3200 50  0001 C CNN
@@ -689,7 +593,7 @@ F 3 "" H 1250 3350 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR043
+L power:GND #PWR043
 U 1 1 594F324A
 P 1250 3650
 F 0 "#PWR043" H 1250 3400 50  0001 C CNN
@@ -710,7 +614,7 @@ Connection ~ 1450 3350
 Text Notes 1300 3800 0    60   ~ 0
 Bulk Storage
 $Comp
-L CP C53
+L Device:CP C53
 U 1 1 594F324D
 P 1450 3500
 F 0 "C53" H 1475 3600 50  0000 L CNN
@@ -723,7 +627,7 @@ F 5 "~" H 1450 3500 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C54
+L Device:CP C54
 U 1 1 594F324E
 P 1750 3500
 F 0 "C54" H 1775 3600 50  0000 L CNN
@@ -736,7 +640,7 @@ F 5 "~" H 1750 3500 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C55
+L Device:CP C55
 U 1 1 594F324F
 P 2000 3500
 F 0 "C55" H 2025 3600 50  0000 L CNN
@@ -749,7 +653,7 @@ F 5 "~" H 2000 3500 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR044
+L power:GND #PWR044
 U 1 1 594F3250
 P 8950 4250
 F 0 "#PWR044" H 8950 4000 50  0001 C CNN
@@ -766,7 +670,7 @@ Connection ~ 9150 3950
 Text Notes 9000 4400 0    60   ~ 0
 Bulk Storage
 $Comp
-L CP C65
+L Device:CP C65
 U 1 1 588940A6
 P 9150 4100
 F 0 "C65" H 9175 4200 50  0000 L CNN
@@ -779,7 +683,7 @@ F 5 "~" H 9150 4100 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C66
+L Device:CP C66
 U 1 1 588940AD
 P 9450 4100
 F 0 "C66" H 9475 4200 50  0000 L CNN
@@ -797,7 +701,7 @@ Wire Wire Line
 	8950 3950 8950 3600
 Connection ~ 8950 3600
 $Comp
-L CP C63
+L Device:CP C63
 U 1 1 58894415
 P 8550 2500
 F 0 "C63" H 8575 2600 50  0000 L CNN
@@ -810,7 +714,7 @@ F 5 "~" H 8550 2500 60  0001 C CNN "MFG"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR045
+L power:GND #PWR045
 U 1 1 58894560
 P 8550 2650
 F 0 "#PWR045" H 8550 2400 50  0001 C CNN
@@ -822,7 +726,7 @@ F 3 "" H 8550 2650 50  0000 C CNN
 $EndComp
 Connection ~ 8550 2350
 $Comp
-L CP C62
+L Device:CP C62
 U 1 1 5889464E
 P 8500 1700
 F 0 "C62" H 8525 1800 50  0000 L CNN
@@ -836,7 +740,7 @@ F 5 "~" H 8500 1700 60  0001 C CNN "MFG"
 $EndComp
 Connection ~ 8500 1550
 $Comp
-L GND #PWR046
+L power:GND #PWR046
 U 1 1 58894891
 P 8500 1850
 F 0 "#PWR046" H 8500 1600 50  0001 C CNN
@@ -847,7 +751,7 @@ F 3 "" H 8500 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C57
+L Device:CP C57
 U 1 1 58894A59
 P 3550 1900
 F 0 "C57" H 3575 2000 50  0000 L CNN
@@ -861,7 +765,7 @@ F 5 "~" H 3550 1900 60  0001 C CNN "MFG"
 $EndComp
 Connection ~ 3550 1750
 $Comp
-L GND #PWR047
+L power:GND #PWR047
 U 1 1 58894B49
 P 3550 2050
 F 0 "#PWR047" H 3550 1800 50  0001 C CNN
@@ -883,7 +787,7 @@ Wire Wire Line
 	6850 2450 6850 2550
 Connection ~ 6850 2550
 $Comp
-L TEST_1P J7
+L PicoEVB-rescue:TEST_1P-PicoEVB-rescue J7
 U 1 1 5935F747
 P 2700 5650
 F 0 "J7" V 2700 5850 50  0000 C CNN
@@ -894,7 +798,7 @@ F 3 "" H 2900 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TEST_1P J8
+L PicoEVB-rescue:TEST_1P-PicoEVB-rescue J8
 U 1 1 5935FB77
 P 2700 5800
 F 0 "J8" V 2700 6000 50  0000 C CNN
@@ -905,7 +809,7 @@ F 3 "" H 2900 5800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TEST_1P J9
+L PicoEVB-rescue:TEST_1P-PicoEVB-rescue J9
 U 1 1 5935FBE1
 P 2700 5950
 F 0 "J9" V 2700 6150 50  0000 C CNN
@@ -916,7 +820,7 @@ F 3 "" H 2900 5950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TEST_1P J10
+L PicoEVB-rescue:TEST_1P-PicoEVB-rescue J10
 U 1 1 5935FC42
 P 2700 6100
 F 0 "J10" V 2700 6300 50  0000 C CNN
@@ -927,7 +831,7 @@ F 3 "" H 2900 6100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TEST_1P J11
+L PicoEVB-rescue:TEST_1P-PicoEVB-rescue J11
 U 1 1 5935FCAA
 P 2700 6250
 F 0 "J11" V 2700 6450 50  0000 C CNN
@@ -938,7 +842,7 @@ F 3 "" H 2900 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TEST_1P J12
+L PicoEVB-rescue:TEST_1P-PicoEVB-rescue J12
 U 1 1 5935FD11
 P 2700 6400
 F 0 "J12" V 2700 6600 50  0000 C CNN
@@ -949,7 +853,7 @@ F 3 "" H 2900 6400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +3V3 #PWR048
+L power:+3V3 #PWR048
 U 1 1 5935FE17
 P 2700 5650
 F 0 "#PWR048" H 2700 5500 50  0001 C CNN
@@ -960,7 +864,7 @@ F 3 "" H 2700 5650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR049
+L power:GND #PWR049
 U 1 1 5935FF8A
 P 2700 6400
 F 0 "#PWR049" H 2700 6150 50  0001 C CNN

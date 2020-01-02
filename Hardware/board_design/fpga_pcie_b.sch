@@ -1,101 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Zilog
-LIBS:zetex
-LIBS:Xicor
-LIBS:Worldsemi
-LIBS:wiznet
-LIBS:video
-LIBS:ttl_ieee
-LIBS:transf
-LIBS:switches
-LIBS:supertex
-LIBS:stm32
-LIBS:stm8
-LIBS:silabs
-LIBS:sensors
-LIBS:rfcom
-LIBS:relays
-LIBS:references
-LIBS:pspice
-LIBS:Power_Management
-LIBS:powerint
-LIBS:Oscillators
-LIBS:onsemi
-LIBS:nxp_armmcu
-LIBS:nordicsemi
-LIBS:msp430
-LIBS:motors
-LIBS:motor_drivers
-LIBS:microchip_pic32mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic10mcu
-LIBS:microchip_dspic33dsc
-LIBS:mechanical
-LIBS:maxim
-LIBS:logo
-LIBS:Lattice
-LIBS:ir
-LIBS:hc11
-LIBS:graphic
-LIBS:gennum
-LIBS:ftdi
-LIBS:ESD_Protection
-LIBS:elec-unifil
-LIBS:diode
-LIBS:dc-dc
-LIBS:cmos_ieee
-LIBS:brooktre
-LIBS:bosch
-LIBS:bbd
-LIBS:battery_management
-LIBS:analog_devices
-LIBS:Altera
-LIBS:allegro
-LIBS:actel
-LIBS:ac-dc
-LIBS:74xgxx
-LIBS:xc7a50t-bga325
-LIBS:MAX1589A
-LIBS:MIC47050
-LIBS:TS3L110
-LIBS:W25Q
-LIBS:93LC46B-SOT23
-LIBS:m2-board
-LIBS:ft2232-fixed
-LIBS:tps82084
-LIBS:PicoEVB-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -112,7 +16,7 @@ $EndDescr
 Text GLabel 4000 1900 0    60   Input ~ 0
 P1V2_MGTAVTT_B
 $Comp
-L R R1
+L Device:R R1
 U 1 1 586D129E
 P 4250 1900
 F 0 "R1" V 4150 1850 50  0000 C CNN
@@ -137,7 +41,7 @@ MGT0_TX_B+
 Text GLabel 6700 3350 2    60   Input ~ 0
 MGT0_TX_B-
 $Comp
-L GND #PWR016
+L power:GND #PWR016
 U 1 1 58882BD6
 P 4350 2950
 F 0 "#PWR016" H 4350 2700 50  0001 C CNN
@@ -148,7 +52,7 @@ F 3 "" H 4350 2950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L xc7a50tcsg325 U1
+L PicoEVB-rescue:xc7a50tcsg325-xc7a50t-bga325 U1
 U 5 1 586A5889
 P 4550 2050
 F 0 "U1" H 4750 2300 60  0000 L CNN
@@ -163,7 +67,7 @@ MGT loopback
 Text Notes 6350 7050 0    118  ~ 24
 PCI Express / MGT loopback
 $Comp
-L CONN_COAXIAL J2
+L PicoEVB-rescue:CONN_COAXIAL-PicoEVB-rescue J2
 U 1 1 59EB4CCF
 P 1750 2350
 F 0 "J2" H 1760 2470 50  0000 C CNN
@@ -175,7 +79,7 @@ F 4 "U.FL-R-SMT(10)" H 1750 2350 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_COAXIAL J6
+L PicoEVB-rescue:CONN_COAXIAL-PicoEVB-rescue J6
 U 1 1 59EB4D49
 P 7400 2100
 F 0 "J6" H 7410 2220 50  0000 C CNN
@@ -187,7 +91,7 @@ F 4 "U.FL-R-SMT(10)" H 7400 2100 60  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L CONN_COAXIAL J5
+L PicoEVB-rescue:CONN_COAXIAL-PicoEVB-rescue J5
 U 1 1 59EB4D73
 P 7050 2100
 F 0 "J5" H 7060 2220 50  0000 C CNN
@@ -199,7 +103,7 @@ F 4 "U.FL-R-SMT(10)" H 7050 2100 60  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L CONN_COAXIAL J1
+L PicoEVB-rescue:CONN_COAXIAL-PicoEVB-rescue J1
 U 1 1 59EB4DA0
 P 1250 2350
 F 0 "J1" H 1260 2470 50  0000 C CNN
@@ -259,7 +163,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 2750 6350 2750
 $Comp
-L CONN_COAXIAL J4
+L PicoEVB-rescue:CONN_COAXIAL-PicoEVB-rescue J4
 U 1 1 59EB4EEE
 P 2850 1850
 F 0 "J4" H 2860 1970 50  0000 C CNN
@@ -271,7 +175,7 @@ F 4 "U.FL-R-SMT(10)" H 2850 1850 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_COAXIAL J3
+L PicoEVB-rescue:CONN_COAXIAL-PicoEVB-rescue J3
 U 1 1 59EB4FDE
 P 2450 1850
 F 0 "J3" H 2460 1970 50  0000 C CNN
@@ -320,7 +224,7 @@ UMGTCLK_0+
 Text Label 3900 2300 0    60   ~ 0
 UMGTCLK_0-
 $Comp
-L GND #PWR017
+L power:GND #PWR017
 U 1 1 59ED3E1B
 P 7050 1900
 F 0 "#PWR017" H 7050 1650 50  0001 C CNN
@@ -331,7 +235,7 @@ F 3 "" H 7050 1900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 59ED3E5D
 P 1250 2150
 F 0 "#PWR018" H 1250 1900 50  0001 C CNN
@@ -342,7 +246,7 @@ F 3 "" H 1250 2150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR019
+L power:GND #PWR019
 U 1 1 59ED3E80
 P 1750 2150
 F 0 "#PWR019" H 1750 1900 50  0001 C CNN
@@ -353,7 +257,7 @@ F 3 "" H 1750 2150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR020
+L power:GND #PWR020
 U 1 1 59ED3EA3
 P 2450 1650
 F 0 "#PWR020" H 2450 1400 50  0001 C CNN
@@ -364,7 +268,7 @@ F 3 "" H 2450 1650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR021
+L power:GND #PWR021
 U 1 1 59ED3EC6
 P 2850 1650
 F 0 "#PWR021" H 2850 1400 50  0001 C CNN
@@ -375,7 +279,7 @@ F 3 "" H 2850 1650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR022
+L power:GND #PWR022
 U 1 1 59ED3F33
 P 7400 1900
 F 0 "#PWR022" H 7400 1650 50  0001 C CNN

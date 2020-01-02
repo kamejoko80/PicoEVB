@@ -1,101 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Zilog
-LIBS:zetex
-LIBS:Xicor
-LIBS:Worldsemi
-LIBS:wiznet
-LIBS:video
-LIBS:ttl_ieee
-LIBS:transf
-LIBS:switches
-LIBS:supertex
-LIBS:stm32
-LIBS:stm8
-LIBS:silabs
-LIBS:sensors
-LIBS:rfcom
-LIBS:relays
-LIBS:references
-LIBS:pspice
-LIBS:Power_Management
-LIBS:powerint
-LIBS:Oscillators
-LIBS:onsemi
-LIBS:nxp_armmcu
-LIBS:nordicsemi
-LIBS:msp430
-LIBS:motors
-LIBS:motor_drivers
-LIBS:microchip_pic32mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic10mcu
-LIBS:microchip_dspic33dsc
-LIBS:mechanical
-LIBS:maxim
-LIBS:logo
-LIBS:Lattice
-LIBS:ir
-LIBS:hc11
-LIBS:graphic
-LIBS:gennum
-LIBS:ftdi
-LIBS:ESD_Protection
-LIBS:elec-unifil
-LIBS:diode
-LIBS:dc-dc
-LIBS:cmos_ieee
-LIBS:brooktre
-LIBS:bosch
-LIBS:bbd
-LIBS:battery_management
-LIBS:analog_devices
-LIBS:Altera
-LIBS:allegro
-LIBS:actel
-LIBS:ac-dc
-LIBS:74xgxx
-LIBS:xc7a50t-bga325
-LIBS:MAX1589A
-LIBS:MIC47050
-LIBS:TS3L110
-LIBS:W25Q
-LIBS:93LC46B-SOT23
-LIBS:m2-board
-LIBS:ft2232-fixed
-LIBS:tps82084
-LIBS:PicoEVB-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -158,15 +62,11 @@ Wire Notes Line
 Wire Notes Line
 	6950 2000 6650 2000
 Wire Notes Line
-	5150 2050 5150 2700
-Wire Notes Line
 	5150 2700 5950 2700
 Wire Notes Line
 	5950 2700 5950 2000
 Wire Notes Line
 	5950 2000 5150 2000
-Wire Notes Line
-	5150 2000 5150 2100
 Text Notes 5850 2250 2    118  ~ 0
 FT230X
 Wire Notes Line
@@ -315,4 +215,6 @@ Wire Notes Line
 	5700 3900 6300 3900
 Wire Notes Line
 	6300 3900 6300 4000
+Wire Notes Line
+	5150 2000 5150 2700
 $EndSCHEMATC

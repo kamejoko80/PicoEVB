@@ -1,101 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Zilog
-LIBS:zetex
-LIBS:Xicor
-LIBS:Worldsemi
-LIBS:wiznet
-LIBS:video
-LIBS:ttl_ieee
-LIBS:transf
-LIBS:switches
-LIBS:supertex
-LIBS:stm32
-LIBS:stm8
-LIBS:silabs
-LIBS:sensors
-LIBS:rfcom
-LIBS:relays
-LIBS:references
-LIBS:pspice
-LIBS:Power_Management
-LIBS:powerint
-LIBS:Oscillators
-LIBS:onsemi
-LIBS:nxp_armmcu
-LIBS:nordicsemi
-LIBS:msp430
-LIBS:motors
-LIBS:motor_drivers
-LIBS:microchip_pic32mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic10mcu
-LIBS:microchip_dspic33dsc
-LIBS:mechanical
-LIBS:maxim
-LIBS:logo
-LIBS:Lattice
-LIBS:ir
-LIBS:hc11
-LIBS:graphic
-LIBS:gennum
-LIBS:ftdi
-LIBS:ESD_Protection
-LIBS:elec-unifil
-LIBS:diode
-LIBS:dc-dc
-LIBS:cmos_ieee
-LIBS:brooktre
-LIBS:bosch
-LIBS:bbd
-LIBS:battery_management
-LIBS:analog_devices
-LIBS:Altera
-LIBS:allegro
-LIBS:actel
-LIBS:ac-dc
-LIBS:74xgxx
-LIBS:xc7a50t-bga325
-LIBS:MAX1589A
-LIBS:MIC47050
-LIBS:TS3L110
-LIBS:W25Q
-LIBS:93LC46B-SOT23
-LIBS:m2-board
-LIBS:ft2232-fixed
-LIBS:tps82084
-LIBS:PicoEVB-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -110,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GND #PWR054
+L power:GND #PWR054
 U 1 1 58818EBF
 P 5950 3850
 F 0 "#PWR054" H 5950 3600 50  0001 C CNN
@@ -121,7 +25,7 @@ F 3 "" H 5950 3850 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3V3 #PWR055
+L power:+3V3 #PWR055
 U 1 1 58818EC5
 P 4450 3450
 F 0 "#PWR055" H 4450 3300 50  0001 C CNN
@@ -136,7 +40,7 @@ USB_2-
 Text GLabel 6200 2950 2    60   BiDi ~ 0
 USB_2+
 $Comp
-L M.2-AE PCB1
+L PicoEVB-rescue:M.2-AE-m2-board PCB1
 U 1 1 58818ECE
 P 5300 3900
 F 0 "PCB1" H 4900 5350 60  0000 C CNN
@@ -155,7 +59,7 @@ Wire Wire Line
 Connection ~ 4600 3550
 Connection ~ 4600 3650
 $Comp
-L GND #PWR056
+L power:GND #PWR056
 U 1 1 58818ED9
 P 4600 4350
 F 0 "#PWR056" H 4600 4100 50  0001 C CNN
@@ -187,7 +91,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 3200 4450 3200
 $Comp
-L C C72
+L Device:C C72
 U 1 1 594F3242
 P 3950 2950
 F 0 "C72" V 4000 3000 50  0000 L CNN
@@ -200,7 +104,7 @@ F 5 "~" H 3950 2950 60  0001 C CNN "MFG"
 	0    -1   1    0   
 $EndComp
 $Comp
-L C C70
+L Device:C C70
 U 1 1 58818F05
 P 3650 2850
 F 0 "C70" V 3700 2900 50  0000 L CNN
@@ -221,7 +125,7 @@ PETX0_2-
 Text Label 4550 2850 2    60   ~ 0
 PETX0_2+
 $Comp
-L C C71
+L Device:C C71
 U 1 1 594F3244
 P 3800 2600
 F 0 "C71" V 3850 2650 50  0000 L CNN
@@ -234,7 +138,7 @@ F 5 "~" H 3800 2600 60  0001 C CNN "MFG"
 	0    1    -1   0   
 $EndComp
 $Comp
-L C C73
+L Device:C C73
 U 1 1 58818F26
 P 4050 2700
 F 0 "C73" V 4100 2750 50  0000 L CNN
